@@ -1,0 +1,60 @@
+<html>
+    <head>
+        <title>Expense Manager</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <div id="header">
+            <div id="heading"><h1>MY BUDGET PARTNER</h1></div>
+            <div id="icon_div">
+                <div id="earning_icon"><img width=80 src="Resources\earning.png">
+                     <div id="show_earning">Earnings</div>
+                </div>
+                <div id="balance_icon"><img width=80 src="Resources\balance.png">
+                    <div id="show_balance"></div>
+                        <div id="check_balance">Balance</div>
+                    
+                </div>
+                <div id="expense_icon"><img width=80 src="Resources\expense.png">
+                    <div id="show_expense">Expenses</div>
+                </div>
+                
+            </div>
+        </div>
+
+
+
+       
+            <div id="middle">
+                <div class="middle_green">
+                    <div class="green_header">Earnings
+                        <form id="form1">
+                            <input  id="earning_description" type="text" placeholder="Enter description" name="ear_des" maxlength="50" minlength="2">
+                            <input id="earning_amount" type="number" placeholder="Enter Amount" name="ear_amt" max="10000000">
+                            <input id="earning_button" type="submit" value="ADD">
+                        </form>
+                    </div>
+
+                    <div id="earning_res"></div>
+                </div>
+        
+
+        
+                <div class="middle_red">
+                    <div class="red_header">Expenses
+                        <form id="form2">
+                            <input id="expense_description" type="text" placeholder="Enter description" name="exp_des" maxlength="50" minlength="2">
+                            <input id="expense_amount" type="number" placeholder="Enter Amount" name="exp_amt" max="10000000">
+                            <input id="expense_button" value="ADD" type="submit">
+                        </form>
+                    </div>
+
+                    <div id="expense_res"></div>
+                </div>
+            </div>
+
+
+
+        <script src="script.js"></script>
+    </body>
+</html>
